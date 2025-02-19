@@ -22,5 +22,10 @@ app.use(cors());
 // API Endpoints
 app.use('/api/product', productRouter);
 
+// Sample Route
+app.get("/", (req, res) => {
+    res.send("Welcome to the E-Commerce API!");
+  });
+
 // Server Listener
 app.listen(port, () => console.log(`Server started on PORT: ${port}`));
